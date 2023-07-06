@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "excel-to-huntflow"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+pytest = "^7.4.0"
+requests-mock = "^1.11.0"
+pandas = "^2.0.3"
+openpyxl = "^3.1.2"
+
+[tool.poetry.scripts]
+import-to-huntflow = "src.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
