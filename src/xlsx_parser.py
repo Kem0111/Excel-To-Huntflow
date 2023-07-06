@@ -1,15 +1,22 @@
 import pandas as pd
+from typing import List, Dict
+from src.core.fix_parser_state import get_start_line
 
 
-def pars_exel(file_path):
-
+def pars_exel_file(file_path: str) -> List[Dict[str, str]]:
+    """
+    Function to parse the Excel file starting from the last processed line.
+    """
+    start_line = get_start_line()
     df = pd.read_excel(file_path)
-
     data = []
 
-    for _, row in df.iterrows():
-        name_parts = row['ФИО'].split()
+    for i, row in df.iterrows():
 
+        if i < start_line:
+            continue
+
+        name_parts = row['ФИО'].split()
         row_dict = {}
 
         match len(name_parts):

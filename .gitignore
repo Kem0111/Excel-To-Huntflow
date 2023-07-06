@@ -175,7 +175,3 @@ alembic/versions/*
 
 # Linters
 .ruff_cache
-
-Менеджер по продажам
-Frontend-разработчик
-*.xlsx

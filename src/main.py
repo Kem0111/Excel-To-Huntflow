@@ -4,6 +4,7 @@ from src.engine import HuntFlowImporter
 
 
 def main():
+
     token, path_to_db = get_cli_args()
     importer = HuntFlowImporter(token, path_to_db)
     importer.run()
