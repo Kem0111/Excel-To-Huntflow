@@ -3,7 +3,7 @@ name = "excel-to-huntflow"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
-readme = "README.md"
+readme = "README.MD"
 packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
