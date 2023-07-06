@@ -7,12 +7,12 @@ def get_cli_args():
         description='Compares two configuration files and shows a difference.'
     )
     parser.add_argument(
-        "token",
+        "--token",
         help='Token or path to file with tokens',
         type=str
     )
     parser.add_argument(
-        "path",
+        "--path",
         help='Path to the folder with the database',
         type=str
     )
