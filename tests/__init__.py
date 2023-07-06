@@ -48,3 +48,9 @@ api_url = "https://dev-100-api.huntflow.dev/v2/accounts/26/applicants"
 
 response = send_data_to_huntflow(data, token, api_url)
 print(response)
+
+{
+  "vacancy": 19,
+  "status": 121,
+  "comment": "Example comment"
+}

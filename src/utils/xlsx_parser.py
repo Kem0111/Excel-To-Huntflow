@@ -23,10 +23,9 @@ def pars_exel(file_path):
 
         row_dict['money'] = row['Ожидания по ЗП']
         row_dict['position'] = row['Должность']
+        row_dict['status'] = row['Статус']
+        row_dict['comment'] = row['Комментарий']
 
         data.append(row_dict)
 
     return data
-
-
-print(pars_exel("Тестовая база.xlsx"))
