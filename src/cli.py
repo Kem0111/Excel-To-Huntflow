@@ -3,7 +3,7 @@ import argparse
 
 def get_cli_args():
     parser = argparse.ArgumentParser(
-        prog='Import to huntflow',
+        prog='import_to_huntflow',
         description='Compares two configuration files and shows a difference.'
     )
     parser.add_argument(
