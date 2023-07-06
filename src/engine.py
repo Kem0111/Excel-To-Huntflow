@@ -91,7 +91,7 @@ class HuntFlowImporter:
         }
         self.huntflow_client.request_post(
             applicant_to_vacancy_body,
-            huntflow_settings.ADD_APPLICANT_TO_VACANCYAPI.format(
+            huntflow_settings.ADD_APPLICANT_TO_VACANCY_API.format(
                 applicant_id=response["id"]
             ),
             self.json_request_headers

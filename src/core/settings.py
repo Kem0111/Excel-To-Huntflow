@@ -12,7 +12,7 @@ class HuntFlowSettings:
         "vacancies?count=100&page={page}&mine=false&opened=false"
     )
 
-    ADD_APPLICANT_TO_VACANCYAPI = (
+    ADD_APPLICANT_TO_VACANCY_API = (
         "https://dev-100-api.huntflow.dev/v2/"
         "accounts/26/applicants/{applicant_id}/vacancy"
     )
